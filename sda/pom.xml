@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>sda</groupId>
+    <artifactId>sda</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+
+</project>
+<!--        Clasa Candidat este caracterizata de un nume complet, un numar intreg ce indica nivelul de-->
+<!--        competente si un sir de caractere ce reprezinta numele departamentului pentru care opteaza cadidatul spre a fi angajat.-->
+<!--        Implementati un constructor pentru clasa Candidat care sa initializeze aceste atribute din clasa.-->
+<!--        Creati clasa clasa Companie care are un nume si contine o lista de candidati.-->
+<!--        O companie detine cel putin 2 departamente, si anume: Marketing si Productie.-->
+<!--        Creati aceste departamente ca si clase interioare ale clasei Companie.-->
+<!--        Aceste clase interioare retin printr-un atribut de tip numar intreg, valoarea minima-->
+<!--        a nivelului de competente necesar pentru un candidat sa fie admis in acel departament.-->
+<!--        Cele 2 departamente implementeaza interfata Evaluator care contine metoda evalueaza()-->
+<!--        care pentru un candidat primit ca parametru schimba starea candidatului,-->
+<!--        in candidat respins sau candidat acceptat. Initial se presupune ca un candidat este acceptat.-->
+<!--        Un candidat care are cel putin nivelul de competenta impus de departamentul pentru candideaza,-->
+<!--        este considerat acceptat,altfel respins.-->
+<!--        Clasa Companie mari are o metoda recruteaza() care pe un candidat primit ca parametru,-->
+<!--        il delega spre a fi evaluat de catre departamentul pentru care candideaza.-->
+<!--        Daca un departament primeste spre evaluare un candidat care nu a optat pentru acel departament, se arunca exceptia de tipul-->
+<!--        IncapacitateEvaluare, impreuna cu un mesaj specific.-->
+
