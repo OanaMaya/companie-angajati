@@ -3,11 +3,23 @@ public class Production extends Department implements Evaluator {
     //  nume = 'Production"
     // nivelComp = 3
 
-    public StatusCandidat evalueaza(Candidat candidat) {
+    public Production () {
+        super("Production", 3);
+    }
+
+
+        public StatusCandidat evalueaza(Candidat candidat) {
   
     // to be implemented
-    return StatusCandidat.ACCEPTAT;
+            if (candidat.getSkilsLevel() > super.getMinSkilsLevel()) {
+                return StatusCandidat.ACCEPTAT;
+            } else if (candidat.getSkilsLevel() < super.getMinSkilsLevel()) {
+                return StatusCandidat.RESPINS;
+            } else {
+                return StatusCandidat.INASTEPTARE;
+            }
+        }
 }
 
-}
+
 

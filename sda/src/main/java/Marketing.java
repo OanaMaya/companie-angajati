@@ -4,9 +4,20 @@ public class Marketing extends Department implements Evaluator {
     //  nume = 'Marketig"
     // nivelComp = 6
 
+    public Marketing() {
+        super("Marketing", 6);
+
+    }
+
     public StatusCandidat evalueaza(Candidat candidat) {
         // to be implemented
-        return StatusCandidat.ACCEPTAT;
+        if (candidat.getSkilsLevel() > super.getMinSkilsLevel()) {
+            return StatusCandidat.ACCEPTAT;
+        } else if (candidat.getSkilsLevel() < super.getMinSkilsLevel()) {
+            return StatusCandidat.RESPINS;
+        } else {
+            return StatusCandidat.INASTEPTARE;
+        }
     }
 }
 

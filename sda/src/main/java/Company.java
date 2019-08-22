@@ -9,7 +9,40 @@ public class Company {
 
     // to be implented
 
+    public Company(String name, List<Candidat> employes, List<Department> companyDepartments) {
+        this.name = name;
+        this.employes = employes;
+        this.companyDepartments = companyDepartments;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public List<Candidat> getEmployes() {
+        return employes;
+    }
+
+    public void setEmployes(List<Candidat> employes) {
+        this.employes = employes;
+    }
+
+    public List<Department> getCompanyDepartments() {
+        return companyDepartments;
+    }
+
+    public void setCompanyDepartments(List<Department> companyDepartments) {
+        this.companyDepartments = companyDepartments;
+    }
+
     public void recruitments(){
+
+
+
 
     }
 }
