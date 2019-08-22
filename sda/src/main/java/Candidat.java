@@ -56,19 +56,7 @@ public class Candidat {
     }
 
 
-    public void recruteaza(Candidat candidat) {
 
-        if (candidat.getDepartamentName().equalsIgnoreCase("Marketing")) {
-            Marketing m = new Marketing();
-            StatusCandidat status = m.evalueaza(candidat);
-            candidat.setStatusCandidat(status);
-        } else if (candidat.getDepartamentName().equalsIgnoreCase("Production")) {
-            Production p = new Production();
-            StatusCandidat status = p.evalueaza(candidat);
-            candidat.setStatusCandidat(status);
-        } else {
-            // aruncam exceptia, daca nu se incadreaza la nici unul.
-            throw new IncapacitateEvaluare(" Candidatul nu poate fi evaluat");
         }
-    }
-}
+
+

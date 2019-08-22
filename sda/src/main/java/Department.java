@@ -5,12 +5,14 @@ public class Department  {
    // gettere, settere, constructor
 
 
+
     public Department() { //contructorul defaul cand avem parametri
     }
 
     public Department(String name, int minSkilsLevel) {
         this.name = name;
         this.minSkilsLevel = minSkilsLevel;
+
 
     }
 
@@ -29,6 +31,7 @@ public class Department  {
     public void setMinSkilsLevel(int minSkilsLevel) {
         this.minSkilsLevel = minSkilsLevel;
     }
+
 
 
 }
