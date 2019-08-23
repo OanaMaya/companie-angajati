@@ -55,8 +55,17 @@ public class Candidat {
         // to be implemented
     }
 
+    @Override
+    public String toString() {
+        return "Candidat{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", skilsLevel=" + skilsLevel +
+                ", departamentName='" + departamentName + '\'' +
+                ", statusCandidat=" + statusCandidat +
+                '}';
+    }
+}
 
-
-        }
 
 
